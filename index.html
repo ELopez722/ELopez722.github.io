@@ -6,37 +6,105 @@
 
 
 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
 <title> Edgar Lopez Portfolio </title>
-    
+
   <nav id = "navbar">
     <ul>
-      <li><a href="#welcome-section">About</a></li>
-       <li><a href="#projects">Projects</a></li>
+      <li><a href="#bio">About</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#contact-info">Contact</a></li>
-     
-      
       </ul>
     </nav>
+
 <body>
   <section id = "welcome-section">
-    <h1>Edgar Lopez</h1>
+    <div id="intro"><h1 id="name">Edgar Lopez</h1>
+      <br>
+      <h2 id="path">Software Engineer / Full-Stack Developer</h2>
+    
+    </div>
+  
+ 
+    <div id="bio">
+      <h2>About me</h2><p>~<br>Hello, my name is Edgar Lopez and I am a Software Engineer / Full-Stack Developer that recently graduated from California State University, East Bay. I'm passionate about coding because it gives me the chance to challenge myself with many new tasks that help me both learn and push myself to new limits. Below are a few of my coding projects along with my contact information, resume, and links to other sites that contain more information about me.   </p>
+      </div>
+
     </section>
+  
+  
   <section id = "projects">
-      <h1 class="project-tile">Here are a few of my projects</h1>
-    <div id="project-list">
-      <div id="tribute" class="left-side">
-        Using Html and CSS i have a basic tribute page.
+    <h1 class="project-title">Here are a few of my projects</h1>
+    <div id="project-element">
+      <!-- 2d puzzle-->
+      <div id="2dPuzzle" class="left-side">
+        An AI created in Python that utilizes A* search algorithms to determine the fastest solution path for a 3x3 2d sliding puzzle.
         </div>
       <div id="tribute" class="right-side">
-        <a href ="https://codepen.io/EdgarOL/full/ZrxQwv" target="_blank"> link to tribute page</a>
+        <a href ="https://github.com/ELopez722/3x3-2D-Puzzle-Solver" target="_blank">
+        <img id="tempImage" src="https://image.flaticon.com/icons/svg/38/38401.svg"> 
+        <br>
+         2D Puzzle solver</a>
         </div>
-      
       </div>
+      <!--information regiistry website-->
+      <div id="project-element">
+      <div id="tribute" class="left-side">
+        I created a connection between a server and a web page to both retrieve and write data using a variety of web development tools such as JSP, servlets, JDBC, and an apache server. 
+        </div>
+      <div id="tribute" class="right-side">
+        <a href ="https://github.com/ELopez722/Information-registry-website" target="_blank">
+        <img id="tempImage" src="https://image.flaticon.com/icons/svg/38/38401.svg">
+        <br>
+         Information Registry Website</a>
+        </div>
+        </div>
+        <!--pirate translator-->
+      <div id="project-element">
+      <div id="Pirate" class="left-side">
+        Web page that utilizes JavaScript to translate key words from English to pirate.
+        </div>
+      <div id="tribute" class="right-side">
+        <a href ="https://codepen.io/EdgarOL/full/YoRjQe" target="_blank">
+        <img id="image" src="https://screenshot.codepen.io/1766164.YoRjQe.small.642da995-caa7-4253-9c02-8a5b53bf975c.png"> 
+        <br>
+         Pirate Translator</a>
+        </div>
+        </div>
+      <!--file system-->
+      <div id="project-element">
+      <div id="file_system" class="left-side">
+        File system that mimics the Unix operating system. It allows you to create, delete, and navigate files without overflowing your disk space. 
+        </div>
+      <div id="file_system" class="right-side">
+        <a href ="https://github.com/ELopez722/File-System" target="_blank">
+        <img id="tempImage" src="https://image.flaticon.com/icons/svg/38/38401.svg">
+        <br>
+         File System</a>
+        </div>
+      </div>
+      <div id="project-end">
+        To view more projects, check out my <a href="https://github.com/ELopez722" target="_blank">github</a> or <a href="https://codepen.io/EdgarOL/" target="blank">codepen</a> account
+        </div>
     </section>
+     
+      
       <section id="contact-info">
-        <h1>Contact info
-          </h1>
-        <a href = "https://github.com/ELopez722" target = "_blank" id = "profile-link"> Github </a>
-        </section>
+        <p id="title">Lets get in touch!
+          </p>
+        <p id="contact-des">Check out my linkedin/Resume for ways to contact me directly, or check out more of my projects on these other sites.</p><br>
+        <!-- linkedin-->
+        <a href="https://www.linkedin.com/in/edgarolopez/" target="blank"><img src="https://image.flaticon.com/icons/svg/34/34405.svg" class="contact_links" alt="linkedin" title="linkedin">
+          Linkedin</a>
+        <!-- github-->
+        <a href="https://github.com/ELopez722" target="_blank"><img src="https://image.flaticon.com/icons/svg/25/25231.svg" class="contact_links" alt="github" title="github"> GitHub</a>
+        
+        <!-- codepen -->
+        <a href="https://codepen.io/EdgarOL/" target="blank"><img src="https://image.flaticon.com/icons/svg/51/51767.svg" class="contact_links" alt="codepen" title="codepen">
+       CodePen </a>
+        
+        <!--resume-->  
+         <a href="https://drive.google.com/open?id=1QqGmrKPihF3Yx9wiwvF5Rulqc2-4KRW3" target="blank"> <img src="https://image.flaticon.com/icons/png/512/1916/1916910.png" class="contact_links" alt="resume" title="resume"> Resume </a>
+         </section>
   </body>
 </html>

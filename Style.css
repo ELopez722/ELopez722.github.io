@@ -1,3 +1,6 @@
+:root {
+  --main-background: #f7ce5e;
+}
 * {
   margin: 0;
   padding: 0;
@@ -9,33 +12,6 @@
     font-size: 50%;
   }
 }
-
-#welcome-section > h1{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  height: 100vh;
-  justify-content: center;
-  background: #002db3;
-}
-
-#projects{
-  padding: 55px;
-  text-align: center;
-  background: #ff9933;
-}
-
-.project-tile{
-  font-size: 1.8rem;
-  font-weight: 400;
-}
-
-#contact-info{
-  height: 80vh;
-  text-align: center;
-  background: lightgreen;
-}
-
 nav{
   position: fixed;
   width: 100%;
@@ -43,38 +19,207 @@ nav{
 
 nav > ul {
   text-align: right;
-  background-color: #e0ebe8;
-  margin-top:0px;
+  background-color: #C5c1c0;
 }
 
 nav > ul > li {
   display: inline-block;
   margin: 55px;
   margin-bottom: 15px;
-  margin-top: 15px;
+  margin-top: 10px;
   font-size: 20px;
 }
 
 nav > ul > li > a {
-  color: #008080;
+  color: #0A1612;
   text-decoration: none;
 }
 
+nav > ul > li > a:hover {
+  color: white;
+  
+}
+
+#welcome-section{
+  height: 190vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  vertical-align: bottom;
+  background: #c5c1c0;
+  background-image: linear-gradient(165deg, #c5c1c0 15% , #1a2930 135% );
+}
+
+#intro{
+  color: #0A1612;
+  --font-family: Arial;
+  --font-family: georgia;
+  font-family: 'Raleway', sans-serif;
+  --font-family: Helvetica;
+  font-size: 1.3em;
+  height: 60vh;
+  text-align: center;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+
+#path{
+  font-weight: 550;
+  margin: 0;
+  font-size: 1.2em;
+}
+#name{
+  margin: 0;
+  font-size: 3.0em;
+  font-weight: 550;
+  margin-bot: -40px;
+}
+
+
+#bio{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #0A1612;
+}
+
+#bio > p{
+  text-align:center;
+  vertical-align: middle;
+  width: 44%;
+  
+  font-size: 1.2em;
+  font-family: arial;
+  line-height: 1.4;
+}
+
+
+#projects{
+  padding: 200px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  text-align: center;
+  background: #1a2930;
+}
+
+
+.project-title{
+ font-size: 3.8rem;
+ font-weight: 100px;
+ color: white;
+}
+
+#project-element{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  background: #5c8a8a;
+  border-radius:25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 30px;
+}
+
 .left-side{
-  display: inline-block;
+  margin: auto;
   margin-right: 10px;
-  width: 25%;
-  background-color: red;
   padding: 5px;
-  margin-top:10px;
-  vertical-align: top;
+  font-size: 1.5em;
+  width: 360px;
+  color: #0A1612;
 }
 
 .right-side{
-  display:inline-block;
-  width: 25%;
+  width:35%;
+  margin: auto;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-text: center;
+  font-size: 1.8em;
+  
 }
 
-nav ul li a:hover {
+.right-side > a > img{
+  width: 225px;
+  margin: auto;
+  padding-top: 10px;
+}
+
+#tempImage{
+  height: 150px;
+  margin: auto;
+}
+
+.right-side > a{
+  text-decoration: none;
+  color:#0A1612;
+}
+
+.right-side > a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+#project-end{
+  color:white;
+  font-size: 1.2em;
+  font-family: arial;
+  line-height: 1.4;
+}
+
+#contact-info{
+  text-align: center;
+  background: var(--main-background);
+  height: 40vh;
+  
+}
+
+#title{
+  font-size: 2.5em;
+  font-weight: 550;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin: auto;
+}
+
+#contact-des{
+  width: 500px;
+  display: inline-block;
+  font-size: 1.2em;
+  font-family: arial;
+  line-height: 1.4;
+}
+
+
+.contact_links{
+  height: 30px;
+  margin-left: 20px;
+  margin-right: 5px;
+}
+
+#contact-info > a{
+  text-decoration: none;
+  transition: transform 0.3s ease-out;
+  display: inline-block;
+  font-size: 2.0rem;
+  padding-top: 20px;
+  padding-bottom: 40px;
   color: black;
 }
+
+#contact-info >a:hover{
+  transform: translateY(-8px);
+  color: white;
+}
+
+html{
+  background: var(--main-background);
+}
+
